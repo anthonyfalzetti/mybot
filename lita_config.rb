@@ -39,4 +39,6 @@ Lita.configure do |config|
     config.robot.adapter = :shell
   end
 
+  config.robot.log_level = ENV.fetch('LOG_LEVEL', 'info').to_sym
+
 end
